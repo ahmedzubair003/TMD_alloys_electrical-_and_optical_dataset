@@ -62,59 +62,60 @@ The quaternary and quinary datasets were generated using CASTEP within BIOVIA Ma
 
 After extraction, each archive contains composition-specific material folders.
 
-### W–Mo–S–Se alloys
+### Quaternary alloy datasets
 
 ```text
-WMoSSe_data/
-├── Mo3W13S6Se26_data/
-├── Mo3W13S13Se19_data/
-├── Mo3W13S19Se13_data/
-├── Mo3W13S26Se6_data/
-└── ...
+Quaternary_CASTEP_data/
+├── WMoSSe_data/
+│   ├── Mo3W13S6Se26_data/
+│   ├── Mo3W13S13Se19_data/
+│   ├── Mo3W13S19Se13_data/
+│   ├── Mo3W13S26Se6_data/
+│   └── ...
+│
+├── WMoSTe_data/
+│   ├── Mo3W13S6Te26_data/
+│   ├── Mo3W13S13Te19_data/
+│   ├── Mo3W13S19Te13_data/
+│   ├── Mo3W13S26Te6_data/
+│   └── ...
+│
+└── WMoSeTe_data/
+    ├── Mo3W13Se6Te26_data/
+    ├── Mo3W13Se13Te19_data/
+    ├── Mo3W13Se19Te13_data/
+    ├── Mo3W13Se26Te6_data/
+    └── ...
 ```
 
-### W–Mo–S–Te alloys
+### Quinary alloy dataset
 
 ```text
-WMoSTe_data/
-├── Mo3W13S6Te26_data/
-├── Mo3W13S13Te19_data/
-├── Mo3W13S19Te13_data/
-├── Mo3W13S26Te6_data/
-└── ...
+Quinary_CASTEP_data/
+└── WMoSSeTe_data/
+    ├── Mo3W13S4Se24Te4_data/
+    ├── Mo3W13S11Se17Te4_data/
+    ├── Mo3W13S17Se11Te4_data/
+    └── ...
 ```
-
-### W–Mo–Se–Te alloys
-
-```text
-WMoSeTe_data/
-├── Mo3W13Se6Te26_data/
-├── Mo3W13Se13Te19_data/
-├── Mo3W13Se19Te13_data/
-├── Mo3W13Se26Te6_data/
-└── ...
-```
-
-### W–Mo–S–Se–Te alloys
-
-```text
-WMoSSeTe_data/
-├── Mo3W13S4Se24Te4_data/
-├── Mo3W13S11Se17Te4_data/
-├── Mo3W13S17Se11Te4_data/
-└── ...
-```
-
 Each CASTEP material folder contains:
 
 | File | Description |
 | --- | --- |
-| `<name> Band Structure.csv` | Raw CASTEP electronic band-structure data |
+| `<name> Band Structure.csv` | Raw CASTEP electronic band-structure data containing the normalized *k*-path coordinate and energy in eV |
 | `<name> DOS.csv` | Total electronic density of states |
 | `<name> Optical Properties x.csv` | Optical response for in-plane (x) polarization |
 | `<name> Optical Properties z.csv` | Optical response for out-of-plane (z) polarization |
+| `plots/` | Subdirectory containing the generated electronic and optical figures |
 
-CIF structure files and phonon-dispersion files are not included in the quaternary and quinary archives.
+### Generated figures
+
+| File | Description |
+| --- | --- |
+| `<name>_band_dos.png` | Electronic band structure and total density of states |
+| `<name>_dielectric.png` | Real and imaginary dielectric functions for the x and z polarizations |
+| `<name>_nk.png` | Refractive index *n* and extinction coefficient *k* |
+| `<name>_absorption_vs_wavelength.png` | Absorption coefficient as a function of wavelength |
 
 ### Quaternary and quinary naming convention
 
