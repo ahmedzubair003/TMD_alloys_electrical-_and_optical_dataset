@@ -51,83 +51,105 @@ The W:Mo ratio therefore sets the alloy composition *x* in W*ₓ*Mo₁₋*ₓ*X�
 
 ---
 
-Quaternary and quinary CASTEP data
+## Quaternary and quinary CASTEP data
 
-The quaternary and quinary datasets are distributed in the following archives:
+The quaternary and quinary datasets were generated using CASTEP within BIOVIA Materials Studio and are distributed in the following archives:
 
-WMoSSe_data.rar
-WMoSTe_data.rar
-WMoSeTe_data.rar
-WMoSSeTe_data.rar
+- `WMoSSe_data.rar`
+- `WMoSTe_data.rar`
+- `WMoSeTe_data.rar`
+- `WMoSSeTe_data.rar`
 
 After extraction, each archive contains composition-specific material folders.
 
-W–Mo–S–Se alloys
+### W–Mo–S–Se alloys
+
+```text
 WMoSSe_data/
 ├── Mo3W13S6Se26_data/
 ├── Mo3W13S13Se19_data/
 ├── Mo3W13S19Se13_data/
 ├── Mo3W13S26Se6_data/
 └── ...
-W–Mo–S–Te alloys
+```
+
+### W–Mo–S–Te alloys
+
+```text
 WMoSTe_data/
 ├── Mo3W13S6Te26_data/
 ├── Mo3W13S13Te19_data/
 ├── Mo3W13S19Te13_data/
 ├── Mo3W13S26Te6_data/
 └── ...
-W–Mo–Se–Te alloys
+```
+
+### W–Mo–Se–Te alloys
+
+```text
 WMoSeTe_data/
 ├── Mo3W13Se6Te26_data/
 ├── Mo3W13Se13Te19_data/
 ├── Mo3W13Se19Te13_data/
 ├── Mo3W13Se26Te6_data/
 └── ...
-W–Mo–S–Se–Te alloys
+```
+
+### W–Mo–S–Se–Te alloys
+
+```text
 WMoSSeTe_data/
 ├── Mo3W13S4Se24Te4_data/
 ├── Mo3W13S11Se17Te4_data/
 ├── Mo3W13S17Se11Te4_data/
 └── ...
+```
 
 Each CASTEP material folder contains:
 
-File	Description
-<name> Band Structure.csv	Raw CASTEP electronic band-structure data
-<name> DOS.csv	Total electronic density of states
-<name> Optical Properties x.csv	Optical response for in-plane (x) polarization
-<name> Optical Properties z.csv	Optical response for out-of-plane (z) polarization
+| File | Description |
+| --- | --- |
+| `<name> Band Structure.csv` | Raw CASTEP electronic band-structure data |
+| `<name> DOS.csv` | Total electronic density of states |
+| `<name> Optical Properties x.csv` | Optical response for in-plane (x) polarization |
+| `<name> Optical Properties z.csv` | Optical response for out-of-plane (z) polarization |
 
-CIF structure files and phonon-dispersion files are not included in the
-quaternary and quinary archives.
+CIF structure files and phonon-dispersion files are not included in the quaternary and quinary archives.
 
-Quaternary and quinary naming convention
+### Quaternary and quinary naming convention
 
-Folder names give the number of atoms of each element in the CASTEP simulation
-cell. For example:
+Folder names specify the number of atoms of each element in the CASTEP simulation cell. For example:
 
-Mo3W13S6Se26_data — 3 Mo, 13 W, 6 S, and 26 Se atoms
-Mo3W13S26Te6_data — 3 Mo, 13 W, 26 S, and 6 Te atoms
-Mo3W13Se19Te13_data — 3 Mo, 13 W, 19 Se, and 13 Te atoms
-Mo3W13S4Se24Te4_data — 3 Mo, 13 W, 4 S, 24 Se, and 4 Te atoms
+- `Mo3W13S6Se26_data` — 3 Mo, 13 W, 6 S, and 26 Se atoms
+- `Mo3W13S26Te6_data` — 3 Mo, 13 W, 26 S, and 6 Te atoms
+- `Mo3W13Se19Te13_data` — 3 Mo, 13 W, 19 Se, and 13 Te atoms
+- `Mo3W13S4Se24Te4_data` — 3 Mo, 13 W, 4 S, 24 Se, and 4 Te atoms
 
-The elemental fractions can be calculated directly from the corresponding atom
-counts.
+The elemental fractions can be calculated directly from the corresponding atom counts.
 
 For a quaternary Mo–W–X–Y alloy, the W fraction is
 
+$$
+x_{\mathrm{W}}
+=
 \frac{N_{\mathrm{W}}}
 {N_{\mathrm{W}}+N_{\mathrm{Mo}}},
 $$
 
 and the chalcogen-X fraction is
 
+$$
+x_{\mathrm{X}}
+=
 \frac{N_{\mathrm{X}}}
 {N_{\mathrm{X}}+N_{\mathrm{Y}}}.
 $$
 
-For a quinary Mo–W–S–Se–Te alloy, the chalcogen fractions are
+For a quinary Mo–W–S–Se–Te alloy, the individual chalcogen fractions are
 
+$$
+x_i
+=
 \frac{N_i}
 {N_{\mathrm{S}}+N_{\mathrm{Se}}+N_{\mathrm{Te}}},
 \qquad
