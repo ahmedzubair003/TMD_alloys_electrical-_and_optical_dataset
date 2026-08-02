@@ -197,6 +197,7 @@ For the present CASTEP dataset, the Γ–M–K–Γ path is normalized from 0 to
 with approximate high-symmetry positions:
 
 
+```text
 Γ = 0.000000
 M = 0.366049
 K = 0.577366
