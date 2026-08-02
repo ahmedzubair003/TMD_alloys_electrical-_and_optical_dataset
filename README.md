@@ -129,32 +129,25 @@ The elemental fractions can be calculated directly from the corresponding atom c
 
 For a quaternary Mo–W–X–Y alloy, the W fraction is
 
-$$
-x_{\mathrm{W}}
-=
-\frac{N_{\mathrm{W}}}
-{N_{\mathrm{W}}+N_{\mathrm{Mo}}},
-$$
+```math
+x_{\mathrm{W}} = \frac{N_{\mathrm{W}}}{N_{\mathrm{W}} + N_{\mathrm{Mo}}}
+```
 
 and the chalcogen-X fraction is
 
-$$
-x_{\mathrm{X}}
-=
-\frac{N_{\mathrm{X}}}
-{N_{\mathrm{X}}+N_{\mathrm{Y}}}.
-$$
+```math
+x_{\mathrm{X}} = \frac{N_{\mathrm{X}}}{N_{\mathrm{X}} + N_{\mathrm{Y}}}
+```
 
 For a quinary Mo–W–S–Se–Te alloy, the individual chalcogen fractions are
 
-$$
-x_i
-=
-\frac{N_i}
-{N_{\mathrm{S}}+N_{\mathrm{Se}}+N_{\mathrm{Te}}},
-\qquad
-i=\mathrm{S},\mathrm{Se},\mathrm{Te}.
-$$
+```math
+x_i = \frac{N_i}{N_{\mathrm{S}} + N_{\mathrm{Se}} + N_{\mathrm{Te}}}, \qquad i = \mathrm{S}, \mathrm{Se}, \mathrm{Te}
+```
+
+---
+
+## Using the data
 
 ## Using the data
 
