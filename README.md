@@ -219,7 +219,7 @@ dataset itself.
 
 ```bibtex
 @misc{Zubair2026TMDdataset,
-    author       = {Aditto, Tarvir Anjum and Chowdhury, Vivek and Imtiaz, Hafiz and Zubair, Ahmed},
+    author       = {Aditto, Tarvir Anjum and Chowdhury, Vivek and Samrat, Md. and Imtiaz, Hafiz and Zubair, Ahmed},
     title        = {{TMD} alloys electrical and optical dataset},
     year         = {2026},
     publisher    = {GitHub},
@@ -228,7 +228,7 @@ dataset itself.
     note         = {Accessed: YYYY-MM-DD}
 }
 ```
-
+ 
 ### 2. The accompanying paper
 
 > T. A. Aditto, V. Chowdhury, H. Imtiaz and A. Zubair,
