@@ -1,12 +1,18 @@
 # TMD Alloys — Electronic and Optical Dataset
 
-Electronic band structures and optical properties of monolayer transition metal
-dichalcogenide (TMD) alloys built from tungsten (W), molybdenum (Mo) and the
-chalcogens sulfur (S), selenium (Se) and tellurium (Te), obtained from
-first-principles density functional theory (DFT) calculations.
+Electronic band structures, density of states, and optical properties of
+monolayer transition-metal dichalcogenide (TMD) alloys composed of tungsten
+(W), molybdenum (Mo), sulfur (S), selenium (Se), and tellurium (Te), obtained
+from first-principles density functional theory (DFT) calculations.
 
-The dataset covers the binary end members (MoX₂, WX₂) and the full range of
-ternary W–Mo compositions for each chalcogen family.
+The dataset covers binary MoX₂ and WX₂ end members, ternary W–Mo alloys for
+the S, Se, and Te chalcogen families, mixed-chalcogen quaternary
+W–Mo–S–Se, W–Mo–S–Te, and W–Mo–Se–Te alloys, and quinary
+W–Mo–S–Se–Te alloys.
+
+The binary and ternary calculations were performed using Quantum ESPRESSO,
+whereas the quaternary and quinary calculations were performed using CASTEP
+within BIOVIA Materials Studio.
 
 ---
 
