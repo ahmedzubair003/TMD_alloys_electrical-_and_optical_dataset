@@ -185,7 +185,7 @@ The optical CSVs load directly with `pandas.read_csv`.
 
 ---
 
-```markdown
+
 ### Using the CASTEP data
 
 The CASTEP band-structure CSV files contain two numerical columns:
@@ -193,17 +193,16 @@ The CASTEP band-structure CSV files contain two numerical columns:
 1. Normalized *k*-path coordinate
 2. Electronic energy in eV
 
-Individual bands are separated in the original CASTEP exports by marker rows
-containing very large numerical values, typically of the order of `1.0e308`.
-
 For the present CASTEP dataset, the Γ–M–K–Γ path is normalized from 0 to 1,
 with approximate high-symmetry positions:
 
-```text
+
 Γ = 0.000000
 M = 0.366049
 K = 0.577366
 Γ = 1.000000
+
+
 
 ## Citation
 
