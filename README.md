@@ -202,6 +202,7 @@ with approximate high-symmetry positions:
 M = 0.366049
 K = 0.577366
 Γ = 1.000000
+```
 
 
 
